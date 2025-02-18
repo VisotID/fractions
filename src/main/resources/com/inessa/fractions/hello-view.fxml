@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.inessa.fractions.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
-
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" prefHeight="490.0" prefWidth="547.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inessa.fractions.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="523.0" prefWidth="701.0">
+      <children>
+          <Button fx:id="Sumb" layoutX="72.0" layoutY="204.0" onAction="#onSumbClick" text="Сумма" />
+      
+          <Label fx:id="welcomeText" layoutX="30.0" layoutY="25.0" prefHeight="18.0" prefWidth="134.0" text="числитель 1 дроби" />
+         <TextField fx:id="Num1" layoutX="23.0" layoutY="47.0" />
+         <TextField fx:id="Den1" layoutX="30.0" layoutY="104.0" />
+         <TextField fx:id="Num2" layoutX="262.0" layoutY="47.0" />
+         <TextField fx:id="Den2" layoutX="262.0" layoutY="104.0" />
+         <TextField fx:id="Ans" layoutX="187.0" layoutY="334.0" />
+         <Label fx:id="welcomeText1" layoutX="30.0" layoutY="82.0" prefHeight="18.0" prefWidth="134.0" text="знаменатель 1 дроби" />
+         <Label fx:id="welcomeText2" layoutX="257.0" layoutY="82.0" prefHeight="18.0" prefWidth="134.0" text="знаменатель 2 дроби" />
+         <Label fx:id="welcomeText3" layoutX="257.0" layoutY="25.0" prefHeight="18.0" prefWidth="186.0" text="числитель 2 дроби" />
+         <Label fx:id="welcomeText4" layoutX="183.0" layoutY="306.0" prefHeight="18.0" prefWidth="134.0" text="ответ" />
+         <Button fx:id="Mind" layoutX="177.0" layoutY="204.0" mnemonicParsing="false" onAction="#onMindClick" text="Разность" />
+         <Button fx:id="Compd" layoutX="306.0" layoutY="204.0" mnemonicParsing="false" onAction="#onCompdClick" text="Умнож" />
+         <Button fx:id="Divisd" layoutX="414.0" layoutY="204.0" mnemonicParsing="false" onAction="#onDivisdClick" text="Делен" />
+      </children></AnchorPane>
 </VBox>
