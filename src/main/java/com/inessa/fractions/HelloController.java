@@ -20,6 +20,7 @@ public class HelloController {
     @FXML
     public TextField Ans;
 
+    // действия при нажатии на кнопку сумма
     public void onSumbClick()
     {
         try {
@@ -34,6 +35,7 @@ public class HelloController {
         }
     }
 
+    // действие при нажатии на кнопку разность
     public void onMindClick()
     {
         try {
@@ -48,6 +50,7 @@ public class HelloController {
         }
     }
 
+    // действие при нажатии на кнопку умножение
     public void onCompdClick()
     {
         try {
@@ -62,6 +65,7 @@ public class HelloController {
         }
     }
 
+    // действие при нажатии на кнопку деление
     public void onDivisdClick()
     {
         try {
