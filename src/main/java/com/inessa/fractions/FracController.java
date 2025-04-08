@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
 
-///
+// Контроллер для окна
 public class FracController {
 
     @FXML
