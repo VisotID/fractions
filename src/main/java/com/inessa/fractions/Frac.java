@@ -1,14 +1,15 @@
 package com.inessa.fractions;
 
+
 /**
  * Высоцкая И.Д.
- * Класс - общность полей и методов(поля - данные, методы - функции)
+ * Класс - ссылочный тип в Java, создаются не объекты, а ссылки на объекты, все классы Java наследуются от класса Object
  * private - область класса, где данные защищены от доступа функций, расположенных вне класса(принцип сокрытия)
  * public - область класса, данные в которой доступны за пределами класса
  */
 public class Frac {
-    private int num;
-    private int den;
+    private int num; // числитель
+    private int den; // знаменатель
 
     // Конструктор по умолчанию
     public Frac()
@@ -79,9 +80,10 @@ public class Frac {
 
     /**
      * Метод сложения двух дробей
+     * static - метод может быть вызван без создания объекта класса
      * Frac first_frac - первая дробь, Frac second_frac - вторая дробь
      */
-    public Frac summ(Frac first_frac, Frac second_frac)
+    static public Frac summ(Frac first_frac, Frac second_frac)
     {
         Frac rez = new Frac(); // переменная класса дробь для записи результата
         if (first_frac.getDen() != second_frac.getDen()) // если знаменатели дробей не равны
@@ -104,9 +106,10 @@ public class Frac {
 
     /**
      * Метод перемножения двух дробей
+     * static - метод может быть вызван без создания объекта класса
      * Frac first_frac - первая дробь, Frac second_frac - вторая дробь
      */
-    public Frac comp(Frac first_frac, Frac second_frac)
+    static public Frac comp(Frac first_frac, Frac second_frac)
     {
         Frac rez = new Frac(); // переменная класса дробь для записи результата
         int new_num = first_frac.getNum() * second_frac.getNum(); // умножаем числитель первой дроби на числитель второй дроби
@@ -118,9 +121,10 @@ public class Frac {
 
     /**
      * Метод разности двух дробей
+     * static - метод может быть вызван без создания объекта класса
      * Frac first_frac - первая дробь, Frac second_frac - вторая дробь
      */
-    public Frac minus(Frac first_frac, Frac second_frac)
+    static public Frac minus(Frac first_frac, Frac second_frac)
     {
         Frac rez = new Frac(); // переменная класса дробь для записи результата
         if (first_frac.getDen() != second_frac.getDen()) // если знаменатели не равны
@@ -143,9 +147,10 @@ public class Frac {
 
     /**
      * Метод деления двух дробей
+     * static - метод может быть вызван без создания объекта класса
      * Frac first_frac - первая дробь, Frac second_frac - вторая дробь
      */
-    public Frac divis(Frac first_frac, Frac second_frac)
+    static public Frac divis(Frac first_frac, Frac second_frac)
     {
         Frac rez = new Frac(); // переменная класса дробь для записи результата
         int new_num = first_frac.getNum() * second_frac.getDen(); // умножаем числитель первой дроби на знаменатель второй дроби
@@ -163,7 +168,7 @@ public class Frac {
     }
 
     /**
-     * Метод деления двух дробей
+     * Метод перевода в десятичную дробь для тестов
      */
     public float dec()
     {
