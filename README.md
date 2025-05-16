@@ -18,6 +18,7 @@
           Application.launch(FracApp.class, args);
       }
    }
+   
    2. Укажите главный класс в настройках проекта:
    
    Перейдите в File -> Project Structure -> Project Settings -> Artifacts
