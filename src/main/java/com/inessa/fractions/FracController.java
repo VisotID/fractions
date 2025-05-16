@@ -21,10 +21,9 @@ public class FracController {
 
     @FXML
     public TextField Ans; // поле для вывода ответа
-
-    //
-    public Frac first = new Frac(); // создание первой дроби(ссылка на объект)
-    public Frac sec = new Frac(); // создание второй дроби(ссылка на объект)
+    
+    public Frac first = new Frac(); // создание первой дроби
+    public Frac sec = new Frac(); // создание второй дроби
 
     // действия при нажатии на кнопку сумма
     public void onSumbClick()
