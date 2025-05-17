@@ -18,7 +18,7 @@
           Application.launch(FracApp.class, args);
       }
    }
-
+```
 ### 1.2. Создание Artifact
 Перейдите в File -> Project Structure -> Artifacts.
 
