@@ -18,12 +18,6 @@
           Application.launch(FracApp.class, args);
       }
    }
-   
-2. Укажите главный класс в настройках проекта:
-   
-   Перейдите в File -> Project Structure -> Project Settings -> Artifacts
-   
-   В разделе "Main Class" выберите новый главный класс.
 
 ### 1.2. Создание Artifact
 Перейдите в File -> Project Structure -> Artifacts.
