@@ -5,7 +5,7 @@
 ## 1. Создание JAR-файла в IntelliJ IDEA
 
 ### 1.1. Настройка проекта
-1. Создайте новый главный класс Launcher
+Создайте новый главный класс Launcher
    ```java
    package com.inessa.fractions;
    import javafx.application.Application;
